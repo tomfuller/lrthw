@@ -6,9 +6,9 @@ def fluffy_bunny
 
   print"> "
   speech = $stdin.gets.chomp
-  if speech.downcase.include?("fat")
+  if speech.downcase.include?("fat") || speech.downcase.include?("large")
     dead("The GIANT RABBIT looks up and swaps you for his GIANT CARROT. Your head is bitten off.")
-  elsif speech.downcase.include?("slim")
+  elsif speech.downcase.include?("slim") || speech.downcase.include?("skinny") || speech.downcase.include?("healthy")
     puts "The GIANT RABBIT blushes and hops away looking very embarressed."
     leprachaun_room
   else
@@ -91,4 +91,4 @@ def dead(why)
   exit(0)
 end
 
-start 
+start
